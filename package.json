@@ -16,12 +16,16 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.5.0"
+  "engines": {
+    "cordovaDependencies": {
+      "<0.2.0": {
+        "cordova-android": ">=3.5.0 <7.0.0"
+      },
+      "0.2.0": {
+        "cordova-android": ">=3.5.0"
+      }
     }
-  ],
+  },
   "author": "",
   "license": "MIT",
   "bugs": {
